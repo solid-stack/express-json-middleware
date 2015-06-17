@@ -31,7 +31,7 @@ createRoutes({
 app.listen(process.env.PORT);
 ```
     
-Your routes array or routes.json should be an array of arrays. Each line has 2 or 3 items.
+Your routes array or routes.json should be an array of arrays. Each line has 3 items.
 
 1. The first item is the express `use` command or an express supported verb.
     1. use will, `use` the middleware on the app
