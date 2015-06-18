@@ -25,7 +25,11 @@ function routes(options) {
             // passing in a router or middleware that doesn't need verb
             case 'use':
                 router = getMiddlewares(route[2], middlewareBase);
-                app.use(route[1], router);
+                if (!!route[1]) {
+                    app.use(route[1], router);
+                } else {
+                    app.use(router);
+                }
                 break;
             // Passing in middlewares
             default:
