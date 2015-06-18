@@ -36,7 +36,7 @@ Your routes array or routes.json should be an array of arrays. Each line has 3 i
 1. The first item is the express `use` command or an express supported verb.
     1. use will, `use` the middleware on the app
     1. a verb will create a new isolated router and use the middlewares listed in the third item
-1. The second item is the routes that this should apply to.
+1. The second item is the routes that this should apply to, `null` if it should be set directly on the default router with no routes.
 1. The third item is the array of middlewares to be run. Each string will be required in with the middlewares base prefixed to it.
 
 ### routes.json
