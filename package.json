@@ -1,6 +1,6 @@
 {
   "name": "express-json-middleware",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/pajtai/express-json-middleware/issues"
   },
-  "homepage": "https://github.com/pajtai/express-json-middleware"
+  "homepage": "https://github.com/pajtai/express-json-middleware",
+  "dependencies": {
+    "lodash": "^3.10.0"
+  }
 }
